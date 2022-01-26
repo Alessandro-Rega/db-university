@@ -1,0 +1,20 @@
+JOIN
+
+1) SELECT * FROM `degrees` , `students` 
+   WHERE students.degree_id = degrees.id 
+   AND degrees.name = "Corso di Laurea in Economia" 
+
+2) SELECT * FROM `departments` 
+   INNER JOIN `degrees` 
+   ON departments.name = "Dipartimento di Neuroscienze" 
+
+3) SELECT * FROM `course_teacher` 
+   INNER JOIN `courses` 
+   ON course_teacher.teacher_id = 44 
+
+4) SELECT * FROM `students` 
+   INNER JOIN `degrees` 
+   ON students.degree_id = degrees.id 
+   ORDER BY students.surname , students.name ASC 
+
+5) 
